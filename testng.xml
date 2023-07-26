@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3" parallel="classes">
+	
+  
+	  <groups> 
+		  <run> 
+			  <include name="smoke"></include>
+		  </run>
+	  </groups>
+	  <listeners><listener class-name="automationpractice.ListenerImplementation"></listener>
+		   </listeners>
+	  <test thread-count="5" name="Test">
+	  <parameter name="uname" value="singh"></parameter>
+	<parameter name="pswd" value="12345"></parameter>
+    <classes>
+      <class name="automationpractice.Testday1">
+       <methods>
+		   <include name="validateSearch"></include>
+		   <include name="validateCartIcon"></include>
+	   </methods>
+      </class>
+      <class name="automationpractice.Testday2">
+		  <methods><include name="loginValidDetail"></include></methods>
+	  </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
