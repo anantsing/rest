@@ -14,4 +14,7 @@ public class App {
   public static void  m11() {
 	  System.out.println("@@@@@@@@@kdckjn");
   }
+  public static void  m12() {
+	  System.out.println("@@@@@@@@@kdckjn");
+  }
 }
